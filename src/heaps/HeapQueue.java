@@ -42,12 +42,12 @@ public class HeapQueue<P extends Comparable<? super P>, V> implements PriorityQu
     static int rightIndex(int i){
         return 2 * i + 1;
     }
-
     boolean exists(int index){
         return 1<=index && index<=size();
     }
-    public HeapQueue(ArrayList<Triplet<P, V>> triplets) {
-        this.triplets = triplets;
+    public HeapQueue() {
+        this.triplets = new ArrayList<>();
+        this.triplets.add(0,null);
     }
     @Override public void add(P priority, V value) {
         Triplet nuevoAdd=new Triplet(priority, this.nextTimeStamp,value);
@@ -108,7 +108,7 @@ public class HeapQueue<P extends Comparable<? super P>, V> implements PriorityQu
         return triplets.get(1).value;
     }
     @Override public int size() {
-        return triplets.size();
+        return triplets.size()-1;
     }
 
     private void swap(int indexActual, int indiceIntercamiable) {
