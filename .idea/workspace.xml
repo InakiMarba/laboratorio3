@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1877562d-4fb4-4ecf-afd6-e6ec2f1dfbd3" name="Changes" comment="PosibleFinal">
+    <list default="true" id="1877562d-4fb4-4ecf-afd6-e6ec2f1dfbd3" name="Changes" comment="PosibleFinal2">
+      <change afterPath="$PROJECT_DIR$/tests/HeapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/heaps/HeapQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heaps/HeapQueue.java" afterDir="false" />
     </list>
@@ -23,6 +24,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="65ede31f-958e-4482-89ff-8e8c718f93d5" />
+        <option name="url" value="https://github.com/InakiMarba/laboratorio3.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,7 +62,16 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.HeapTest">
+    <configuration name="HeapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="laboratorio3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HeapTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TripletTest.testSomeCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="laboratorio3" />
       <option name="PACKAGE_NAME" value="" />
@@ -61,6 +84,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HeapTest" />
         <item itemvalue="JUnit.TripletTest.testSomeCompare" />
       </list>
     </recent_temporary>
@@ -95,13 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701017777701</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="PosibleFinal2">
+      <created>1701034804226</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701034804226</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="proba1" />
     <MESSAGE value="estructuraInical" />
     <MESSAGE value="PosibleFinal" />
-    <option name="LAST_COMMIT_MESSAGE" value="PosibleFinal" />
+    <MESSAGE value="PosibleFinal2" />
+    <option name="LAST_COMMIT_MESSAGE" value="PosibleFinal2" />
   </component>
 </project>

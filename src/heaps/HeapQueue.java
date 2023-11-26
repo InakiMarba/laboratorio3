@@ -15,9 +15,9 @@ public class HeapQueue<P extends Comparable<? super P>, V> implements PriorityQu
         }
         @Override
         public int compareTo(Triplet<P, V> other) {
-            int comparacionPrioridad=this.priority.compareTo(other.priority);
-            if(comparacionPrioridad!=0){
-                return comparacionPrioridad;
+            int comparePriority =this.priority.compareTo(other.priority);
+            if(comparePriority !=0){
+                return comparePriority ;
             }else {
                 if (this.timeStamp<other.timeStamp){
                     return -1;
@@ -50,57 +50,22 @@ public class HeapQueue<P extends Comparable<? super P>, V> implements PriorityQu
         this.triplets.add(0,null);
     }
     @Override public void add(P priority, V value) {
-        Triplet nuevoAdd=new Triplet(priority, this.nextTimeStamp,value);
+        Triplet newChild =new Triplet(priority, this.nextTimeStamp,value);
+        triplets.add(newChild);
+        orderHeapChilds();
         this.nextTimeStamp++;
-        triplets.add(nuevoAdd);
-        ordenacionHeapHijos();
-    }
-
-    private void ordenacionHeapHijos() {
-        int indexActual=triplets.size();
-        ordenacionHeapRecHijos(indexActual);
-    }
-
-    private void ordenacionHeapRecHijos(int indexActual) {
-        if(indexActual>1){
-            int indicePadre=parentIndex(indexActual);
-            if(triplets.get(indicePadre).compareTo(triplets.get(indexActual))<0){
-                swap(indexActual, indicePadre);
-                ordenacionHeapRecHijos(indicePadre);
-            }
-        }
     }
 
     @Override public V remove() {
         if (size()==0){
             throw new NoSuchElementException();
         }
-        V elemtoEliminado=triplets.get(1).value;
+        V deletedElem=triplets.get(1).value;
         triplets.remove(1);
         triplets.set(1,triplets.get(size()));
-        ordenacionHeapPadre(1);
-        return elemtoEliminado;
+        orderHeapParent(1);
+        return deletedElem;
     }
-
-    private void ordenacionHeapPadre(int indiceActual) {
-        int indexIzquierda=leftIndex(indiceActual);
-        int indexDerecha=rightIndex(indiceActual);
-        int mayorPrioridad=indiceActual;
-
-        if(exists(indexIzquierda) && triplets.get(indexIzquierda).compareTo(triplets.get(mayorPrioridad))>0){
-            mayorPrioridad=indexIzquierda;
-        }
-
-        if(exists(indexDerecha) && triplets.get(indexDerecha).compareTo(triplets.get(mayorPrioridad))>0){
-            mayorPrioridad=indexDerecha;
-        }
-
-        if(mayorPrioridad!=indiceActual){
-            swap(indiceActual,mayorPrioridad);
-            ordenacionHeapPadre(mayorPrioridad);
-        }
-    }
-
     @Override public V element() {
         if (size()==0){
             throw new NoSuchElementException();
@@ -111,9 +76,42 @@ public class HeapQueue<P extends Comparable<? super P>, V> implements PriorityQu
         return triplets.size()-1;
     }
 
-    private void swap(int indexActual, int indiceIntercamiable) {
-        Triplet temp=triplets.get(indexActual);
-        triplets.set(indexActual, triplets.get(indiceIntercamiable));
-        triplets.set(indiceIntercamiable,temp);
+    private void orderHeapChilds() {
+        int indexActually=this.size();
+        orderHeapChildsRec(indexActually);
+    }
+
+    private void orderHeapChildsRec(int indexActually) {
+        if(indexActually>1){
+            int parentIndex=parentIndex(indexActually);
+            if(triplets.get(parentIndex).compareTo(triplets.get(indexActually))<0){
+                swap(indexActually, parentIndex);
+                orderHeapChildsRec(parentIndex);
+            }
+        }
+    }
+    private void orderHeapParent(int indexActually) {
+        int leftIndex=leftIndex(indexActually);
+        int rightIndex=rightIndex(indexActually);
+        int mostPriority=indexActually;
+
+        if(exists(leftIndex) && triplets.get(leftIndex).compareTo(triplets.get(mostPriority))>0){
+            mostPriority=leftIndex;
+        }
+
+        if(exists(rightIndex) && triplets.get(rightIndex).compareTo(triplets.get(mostPriority))>0){
+            mostPriority=rightIndex;
+        }
+
+        if(mostPriority!=indexActually){
+            swap(indexActually,mostPriority);
+            orderHeapParent(mostPriority);
+        }
+    }
+
+    private void swap(int indexActually, int changedIndex) {
+        Triplet temp=triplets.get(indexActually);
+        triplets.set(indexActually, triplets.get(changedIndex));
+        triplets.set(changedIndex,temp);
     }
 }
