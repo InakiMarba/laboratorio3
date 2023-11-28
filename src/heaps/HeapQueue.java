@@ -61,8 +61,8 @@ public class HeapQueue<P extends Comparable<? super P>, V> implements PriorityQu
             throw new NoSuchElementException();
         }
         V deletedElem=triplets.get(1).value;
-        triplets.remove(1);
         triplets.set(1,triplets.get(size()));
+        triplets.remove(size());
         orderHeapParent(1);
         return deletedElem;
     }

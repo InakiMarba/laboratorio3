@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1877562d-4fb4-4ecf-afd6-e6ec2f1dfbd3" name="Changes" comment="PosibleFinal2">
-      <change afterPath="$PROJECT_DIR$/tests/HeapTest.java" afterDir="false" />
+    <list default="true" id="1877562d-4fb4-4ecf-afd6-e6ec2f1dfbd3" name="Changes" comment="FinalEnInglesTestos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/heaps/HeapQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heaps/HeapQueue.java" afterDir="false" />
     </list>
@@ -47,27 +46,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Iñaki/Desktop/Trabajos/UdlIntel/EstructuraDatos/laboratorio3&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "temurin-17",
+    "last_opened_file_path": "C:/Users/Iñaki/Desktop/Trabajos/UdlIntel/EstructuraDatos/Ejercicios",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="JUnit.HeapTest">
     <configuration name="HeapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="laboratorio3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HeapTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeapTest.testAddAndRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="laboratorio3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HeapTest" />
+      <option name="METHOD_NAME" value="testAddAndRemove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeapTest.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="laboratorio3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HeapTest" />
+      <option name="METHOD_NAME" value="testSize" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,6 +104,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.HeapTest" />
+        <item itemvalue="JUnit.HeapTest.testSize" />
+        <item itemvalue="JUnit.HeapTest.testAddAndRemove" />
         <item itemvalue="JUnit.TripletTest.testSomeCompare" />
       </list>
     </recent_temporary>
@@ -126,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701034804226</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="FinalEnInglesTestos">
+      <created>1701037198666</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701037198666</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -134,6 +162,7 @@
     <MESSAGE value="estructuraInical" />
     <MESSAGE value="PosibleFinal" />
     <MESSAGE value="PosibleFinal2" />
-    <option name="LAST_COMMIT_MESSAGE" value="PosibleFinal2" />
+    <MESSAGE value="FinalEnInglesTestos" />
+    <option name="LAST_COMMIT_MESSAGE" value="FinalEnInglesTestos" />
   </component>
 </project>
